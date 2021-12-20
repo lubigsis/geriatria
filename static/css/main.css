@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'KoHo', sans-serif;
+    color: #404040;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*.........................................header...............................*/
+.header {
+	padding: 20px 20px 10px 20px;
+	background: #fff;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+.header .logo {
+	margin-bottom: 20px;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.logo h1 {
+	font-size: 40px;
+}
+
+.logo .iniciales-logo {
+	padding: 6px;
+	border: 1px solid #000;
+	display: inline-block;
+	font-size: 17px;
+	margin-bottom: 15px;
+}
+
+.menu {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu a {
+	padding: 10px;
+	color: #000;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	width: 100%;
+	text-align: center;
+	transition: 0.2s ease all;
+	font-size: 16px;
+
+}
+
+.menu a:hover {
+	background: #000;
+	color: #fff;
+}
+
+
+/***********************************************Imagen principal*****************/
+
+.foto-principal{
+    width: 100%;
+    height: 430px; 
+    margin: auto;
+    background-image: url(/static/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgb(5, 97, 150);
+    margin-top: 11px;
+    margin-bottom: 100px;
+   
+    
+       
+}
+
+
+.boton{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #000c0a;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin: 10px 0;
+    border-radius: 5%;
+    z-index: 2;
+}
+
+.boton:hover{
+    opacity: .7;
+    
+}
+
+
+.foto-principal h2,
+.foto-principal p   {
+    margin: 10px;
+    z-index: 3;
+    font-size: 23px;
+
+}
+
+hr{
+    margin: 10px 0  0;
+    color: #090a0a;
+}
+
+/**********************************************************ESPECIALIDADES******/
+
+.contenedor-especialidades{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.contenedor-especialidades img{
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin-top: 70px;
+    margin-left: 70px;
+    
+}
+
+.contenedor-especialidades h3{
+    text-align: center;
+    margin: 4px;
+}
+
+
+/********************************************************UBICACION*******/
+
+.contenedor-ubicacion{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin: auto;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 100px;
+}
+
+.contenedor-ubicacion h2{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/*---------------------------Formulario de Contacto-----------------------------*/
+
+.formulario-contacto{
+    width: 400px;
+    height: auto;
+    background-color: #969090;
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 20px 25px;
+    box-shadow: 7px 13px 37px #000;
+    border-top: 7px solid #cc0088;
+
+}
+
+.input-contacto{
+    width: 100%;
+    border: 1.4px solid #cc005f;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background-color: #f7f4f4;
+    font-size: 14px;
+    
+}
+
+
+.btn{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #cc0000;
+    color: #fff;
+    margin-top: 6px;
+    cursor: pointer;
+  
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+/*-------------------------------------------------Footer-----------------------*/
+
+.contenedor-footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    background:  #0d0e0d;
+ 
+}
+
+.contenedor-footer a{
+    padding: 20px;
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+}
+
+/*------------------------------------Botón Wsp--------------------*/
+
+.btn-wsp{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover{
+    color: #0df053;
+    background: #fff;
+}
+
+/********************************************Responsive design*********************/
+@media screen and (max-width: 800px){
+    header .logotipo{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    header .contenedor{
+        flex-direction: column;
+    }
+
+    .foto-principal{
+        font-size: 14px; /*Se achica el conjunto de los elementos que están dentro del contenedor foto-principal porque utilicé medidas relativas*/
+    }
+
+    .foto-principal .descripcion{
+        max-width: 100%;
+        margin-left: 5px;
+    }
+}
