@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+            
+        <header class="header">
+            <div class="logo">
+                <p class="iniciales-logo">Gladys Ester Torres</p>
+                <h1>Asistente de geriatría</h1>
+            </div>
+            <nav class="menu">
+                <a href="/">Inicio</a>
+                <a href="{{url_for('about')}}">Acerca de</a>
+                <a href="{{url_for('contact')}}">Contacto</a>
+            </nav>            
+        </header>
+                
+            
+        {% block content %}
+
+        {% endblock %}
+              
+
+
+
+
+   <!--Boton de wsp-->             
+
+        <a href="https://api.whatsapp.com/send?phone=+5491154952124" class="btn-wsp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+
+
+                <div class="contenedor-footer">
+                    <a href="#">Dirección</a>
+                    <a href="#">Teléfono</a>
+                    <a href="#">Contacto</a>
+
+                </div>
+
+
+    </div>
+
+    
+
+
+
+ 
+
+
+
+<script src="https://kit.fontawesome.com/c96aa3d619.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,98 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hello</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="contenedor">
-            
-        <header class="header">
-            <div class="logo">
-                <p class="iniciales-logo">Gladys Ester Torres</p>
-                <h1>Asistente de geriatría</h1>
-            </div>
-            <nav class="menu">
-                <a href="#">Inicio</a>
-                <a href="#">Acerca de</a>
-                <a href="#">Contacto</a>
-            </nav>
-            <div class="foto-principal">
+{% extends "layout.html" %}
+
+{% block content %}
+<header>
+    <div class="foto-principal">
                     
-                <h2 class="titulo">frase</h2>
-                
-                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iure at deleniti adipisci hic et, natus ut corrupti odit unde sequi voluptate exercitationem nobis. Culpa distinctio blanditiis repellat obcaecati vitae.
-                </p>
+        <h2 class="titulo">frase</h2>
+        
+        <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iure at deleniti adipisci hic et, natus ut corrupti odit unde sequi voluptate exercitationem nobis. Culpa distinctio blanditiis repellat obcaecati vitae.
+        </p>
 
-                <a href="#" class="boton">contacto</a>
-                     
-        </div>
-        </header>
-                
-              
-
-<main>
-    
-                <div class="contenedor-especialidades">
-                    <div>
-                        <img src="imagen-ejemplo.jpg" alt="">
-                        <h3>loreeeeee</h3>
-                    </div>
-                    <div>
-                        <img src="imagen-ejemplo.jpg" alt="">
-                        <h3>otra actividad</h3>
-                    </div>
-                </div>
-
-
-                <!--<div class="contenedor-ubicacion">
-
-                    <h2>Dónde me encuentro</h2>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.22886907799!2d-58.39668326565312!3d-34.60271463735414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1621987893534!5m2!1ses-419!2sar" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            -->
-                <form class="formulario-contacto" action="">
-                    <input type="text" placeholder="Nombre y Apellido" class="input-contacto" name="nombre">
-                    <input type="email" placeholder="Ingrese su e-mail" class="input-contacto" name="email">
-                    <textarea name="mensaje" rows="8" cols="80" class="input-contacto" placeholder="Ingrese su mensaje"></textarea>
-                    <input type="submit" name="button" value="Enviar Mensaje" class="btn">
-                    
-                </form>
-
-
-   <!--Boton de wsp-->             
-
-    <a href="https://api.whatsapp.com/send?phone=+5491154952124" class="btn-wsp" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-</main>
-
-                <div class="contenedor-footer">
-                    <a href="#">Dirección</a>
-                    <a href="#">Teléfono</a>
-                    <a href="#">Contacto</a>
-
-                </div>
-
-
-    </div>
-
-    
-
-
-
- 
-
-
-
-<script src="https://kit.fontawesome.com/c96aa3d619.js" crossorigin="anonymous"></script>
-</body>
-</html>
+        <a href="#" class="boton">contacto</a>
+             
+ </div>
+</header>
+   
+{% endblock %}

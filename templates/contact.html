@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<main>
+    <form class="formulario-contacto" action="">
+        <input type="text" placeholder="Nombre y Apellido" class="input-contacto" name="nombre">
+        <input type="email" placeholder="Ingrese su e-mail" class="input-contacto" name="email">
+        <textarea name="mensaje" rows="8" cols="80" class="input-contacto" placeholder="Ingrese su mensaje"></textarea>
+        <input type="submit" name="button" value="Enviar Mensaje" class="btn">
+        
+    </form>
+</main>
+
+{% endblock %}
