@@ -67,7 +67,7 @@ body{
 /***********************************************Imagen principal*****************/
 
 .foto-principal{
-    width: 100%;
+    width: 98%;
     height: 430px; 
     margin: auto;
     background-image: url(/static/portada.jpg);
@@ -80,13 +80,32 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    color: rgb(5, 97, 150);
+    color: rgb(0, 5, 8);
     margin-top: 11px;
     margin-bottom: 100px;
-   
-    
-       
+          
 }
+
+.foto-principal-about{
+    width: 90%;
+    height: 420px; 
+    margin: auto;
+    background-image: url(/static/about1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    background-position: center center;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgb(238, 27, 55);
+    margin-top: 0px;
+    margin-bottom: 100px;
+          
+}
+
 
 
 .boton{
@@ -173,6 +192,7 @@ hr{
     height: auto;
     background-color: #969090;
     margin: auto;
+    margin-top: 30px;
     margin-bottom: 100px;
     padding: 20px 25px;
     box-shadow: 7px 13px 37px #000;
